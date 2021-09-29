@@ -120,8 +120,8 @@ for (i = 0; i < entries.length; i++) {
   searchHist.textContent = entries[i];
   searchLog.append(searchHist);
 }
-$("<button>").click(function () {
-  city = $(this).text();
+$("button").click(function () {
+  city = JSON.parse(localStorage.getItem("name"));
   queryURL =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     city +
@@ -129,6 +129,6 @@ $("<button>").click(function () {
     API_Key;
   console.log(queryURL);
   setTimeout(() => {
-    holyHeck(queryURL);
+    wForecast(queryURL);
   }, 1000);
 });
