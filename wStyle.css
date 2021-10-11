@@ -8,6 +8,7 @@ header, .col-12 {
 }
 .col {
     height: 270px;
+    background-color: rgb(221, 205, 205);
 }
 
 .button {

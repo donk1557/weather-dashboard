@@ -13,7 +13,7 @@ fetcher.addEventListener("click", function () {
   var check = $(".form-control");
   city = check.val().trim();                  //input value from search bar acquired and utilized in forming API url
   queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     ",us&mode=json&units=imperial&appid=" +
     API_Key;
@@ -52,7 +52,7 @@ function wForecast(queryURL) {
       var stringLat = latData.toString();
       var stringLon = lonData.toString();
       queryURL_2 =
-        "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+        "https://api.openweathermap.org/data/2.5/onecall?lat=" +
         stringLat +
         "&lon=" +
         stringLon +
