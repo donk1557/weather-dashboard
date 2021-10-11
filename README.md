@@ -3,6 +3,8 @@ This program displays the weather conditions for the current day as well as for 
 
 Here is link: https://donk1557.github.io/weather-dashboard/
 
+Image of site: ![Weather Dashboard](./asset/weather_board.jpeg) 
+
 ## weather info
 The user is shown the date, an icon for the kind of weather it will be/is, the temperature (in Fahrenheit), wind speed (in miles per hour), and the humidity in that order. The current weather panel also has additional information for the UV index and the text for the UV index is color-coded based on a severity scale (green = low; orange = moderate; red = high).
 
